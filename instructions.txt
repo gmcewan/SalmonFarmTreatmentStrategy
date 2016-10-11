@@ -1,0 +1,63 @@
+To run the model requires the AnyLogic modelling software. It can be
+downloaded from http://www.anylogic.com There is a free (but limited)
+version available.
+
+
+To run the model with real-time output
+-------------------------------
+NB: This will do a single iteration of the model. Stochastic variation
+may mean that the output is non-typical.
+
+1. Open "Salmon Farms (treatment).alp" in AnyLogic.
+
+2. In the bar of icons at the top of the window, there is a green
+circle with a white arrow in it. Next to that is a small black arrow
+pointing down. Click on the black arrow and select 
+"Salmon Farms (treatment).alp / Simulation"
+
+3. There will be a short wait (with a progress bar from AnyLogic) and
+a new window will appear with three text boxes.
+
+4. In the text boxes, enter file names that are in the right format
+for those types of files. They files must appear in the "input/"
+folder. There are examples already there that we used in our
+scenarios.
+
+
+To run a batch of iterations
+-----------------------
+
+* This requires the University Researcher or Professional versions of
+AnyLogic.
+
+1. In the leftmost pane of the AnyLogic window (labelled "Projects"),
+click on "RunTrials" (it's near the bottom). New text will appear in
+the rightmost pane.
+
+2. Change the values at the top. The "name" is the name of the output
+directory that will be created in "output/", "numberOfCycles" is the
+number of production cycles that will be simulated, "numberOfTrials"
+is the number of independent iterations to be run  with these
+parameters.
+
+3. It will take a while for the simulation to finish. There will be
+some output on progress at the bottom of the AnyLogic window. At the
+end there will be a number of csv files in the output directory you
+specified.
+
+
+To produce pretty charts like we did in the paper
+--------------------------------------
+
+1. We have included the R scripts that we used to produce figures 2,
+3, and 4. We include instructions to use these from the command
+line. The scripts are designed to work on multiple output directories
+that have the same names that we used. If you want something
+different, the scripts should be modified.
+
+2. Open a command line. Change to the output/ directory.
+
+3. Run the command "r -f run_all_plots.r"
+
+4. There will be three new pdf files in the output/ directory:
+licecount.pdf, treatments.pdf, and resistances.pdf

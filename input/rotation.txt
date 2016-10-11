@@ -1,0 +1,22 @@
+
+# General format
+# type, test frequency, threshold, count type, treatment type | cage list
+
+# type: responsive, periodic, alternate
+# test frequency: number of days between counts
+# threshold = average lice/salmon
+# count type: 0=adult females, 1=all adults, 2=mobiles
+# treatment type: 1 or more codes of treatment chemicals separated by -
+# cage list: cage numbers separated by ,
+
+#------------------
+
+# Responsive Alternation
+# count every 7 days
+# if there are more than 3 adult per salmon
+# then treat 
+# alternate T1 and T2 treatments
+alternate, T1-T2, 7, 3, 1
+
+# start cleaner fish at the beginning of each cycle
+# scheduled, CF, 0

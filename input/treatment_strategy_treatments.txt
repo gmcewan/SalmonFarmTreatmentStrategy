@@ -1,0 +1,67 @@
+# Each treatment chemical is bounded by --start-- and --end--
+# Blank lines and lines starting with # are ignored
+
+# Type is one of: bath, feed
+
+# The Code must be unique
+
+# Once "Efficacy" is found, recognisable stage names will be read
+# until a line not starting with a '-' is encountered.
+# Any stages not specified will be assigned 0 efficacy.
+
+# Resistance is one of:
+#  Codominant: res. benefit,  fitness cost,
+#  	       	    	 
+
+
+--start--
+Type: Bath
+Code: T1
+Full Name: Treatment One
+Efficacy
+>Planktonic: 0
+>Chalimus: .95
+>Preadult: .95
+>AdultFemale: .95
+>AdultMale: .95
+Resistance: Codominant, 0.45, 0.0
+--end--
+
+--start--
+Type: Bath
+Code: T2
+Full Name: Treatment Two
+Efficacy
+>Planktonic: 0
+>Chalimus: .95
+>Preadult: .95
+>AdultFemale: .95
+>AdultMale: .95
+Resistance: Codominant, 0.45, 0.01
+--end--
+
+--start--
+Type: Bath
+Code: Control
+Full Name: Control Treatment 
+Efficacy
+>Planktonic: 0
+>Chalimus: .95
+>Preadult: .95
+>AdultFemale: .95
+>AdultMale: .95
+Resistance: Codominant, 0.45, 0
+--end--
+
+#--start--
+#Type: Continuous
+#Code: CF
+#Full Name: Cleaner Fish
+#Efficacy
+#>Planktonic: 0, 0
+#>Chalimus: 0, 0
+#>Preadult: .4, -0.0011
+#>AdultFemale: .99, -0.002
+#>AdultMale: .8, -0.002
+#Resistance: None
+#--end--

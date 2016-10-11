@@ -1,0 +1,95 @@
+# Number of salmon on the farm
+farm_salmon = 3000
+
+# Number of salmon in the wild population
+wild_salmon = 0
+
+# number of cages on the farm. Put 1 if you don't want to deal with cages
+farm_numcages = 2
+
+# Maximum number of attached sea louse agents allowed on a single salmon host
+max_lice_load = 100
+
+# Time between stocking the farm and harvesting. The cycle is assumed
+# to be 2 years so this must be 730 or less
+farming_time = 656
+
+# Time the farm is left in fallow
+# CURRENTLY NOT EDITABLE - CYCLE ASSUMED TO BE 2 YEARS
+# fallow_time = 730 - farming_time
+
+# number of days from harvest when there are no treatments
+no_treatment_days = 60
+
+# Determines whether we should terminate the simulation if all of
+# the treatments being applied reach 100% resistance. Assumes that
+# they will remain at 100% for the rest of the time. Don't use if
+# there are any fitness costs.
+# true means it will stop, false means all simulations will run for
+# the full time. 
+stop_at_max_resistance = false
+
+# Determines number of Planktonic sea louse agents arriving at the
+#  farm from external sources per day:
+#   #lice = [(coeff x temperature)/10] per salmon per day
+external_coefficient = 1
+
+# Time between first stocking the farm and the first arrival of the
+#  wild population (must be 365 or less)
+first_wild = 50
+
+# Time that the wild population spends in contact with the farm each
+#  year. Must be (365-first_wild) or less.
+wild_contact = 90
+
+# Probability of a planktonic louse attaching to a fish on the farm 
+# (0 to 1)
+farm_attachment_probability = 0.3
+
+# Probability of a planktonic louse attaching in the wild population
+# (0 to 1)
+wild_attachment_probability = 0.03
+
+# Probability of a copepodid leaving its own community to attempt to
+# attach to a fish in the other community
+cross_community_probability = 0.3
+
+# Number of eggs hatching in a female sea louse's first egg clutch 
+# (2 egg strings * num eggs per string * % viable)
+first_clutch = 273
+
+# Number of sea louse eggs hatching in clutches after the first 
+# (2 egg strings * num eggs per string * % viable)
+later_clutch = 513
+
+# Proportion of female sea louse agents at hatching 
+# (There is no evidence of gender imbalance in sea lice on farms at
+#  first stage of gender differentiation)
+proportion_female = 0.5
+
+# The following refer to sea lice on the wild salmon when they arrive
+#  at the farm. They are numbers per adult wild salmon. There are no
+#  planktonic lice with them.
+chalimus = 2
+preadults = 2
+adults = 2
+
+# These are proportions of the adult lice arriving on the wild
+# salmon. The left over females are virgin.
+female = 0.5
+first_gravid = 0.3
+later_gravid = 0.6
+
+# Male dispersal probability
+# prob = male_coeff*#males - female_coeff*#females + base_prob
+base_prob = 0.05
+male_coeff = 0.025
+female_coeff = 0.005
+
+# Probability of a planktonic louse attaching to a host in
+# a different cage
+probability_attaching_other_cage = 0.3
+
+min_time_between_treatments = 14
+
+

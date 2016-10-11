@@ -1,0 +1,28 @@
+
+# General format
+# type, test frequency, threshold, count type, treatment type | cage list
+
+# type: responsive, periodic, alternate
+# test frequency: number of days between counts
+# threshold = average lice/salmon
+# count type: 0=adult females, 1=all adults, 2=mobiles
+# treatment type: 1 or more codes of treatment chemicals separated by -
+# cage list: cage numbers separated by ,
+
+#------------------
+
+# Periodic Application
+scheduled, T1, 11
+scheduled, T2, 77
+scheduled, T1, 128
+scheduled, T2, 179
+scheduled, T1, 243
+scheduled, T2, 340
+scheduled, T1, 418
+scheduled, T2, 472
+scheduled, T1, 521
+scheduled, T2, 578
+
+
+
+
